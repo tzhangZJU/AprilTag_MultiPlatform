@@ -16,4 +16,4 @@ cmake ..
 cmake --build .
 cmake --build . --target install
 ```
-After that, then you can find the apriltag library and include files in install directory. Now please enjoy the libraty compiled by yourself in different platforms. 
+After that, then you can find the apriltag library and include files in **install** directory. Now please enjoy the libraty compiled by yourself in different platforms. 
