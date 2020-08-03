@@ -1,0 +1,10 @@
+.idea/
+.vscode/
+.vs/
+.git/
+build/
+install/
+
+# Ignore all local history of files
+.history
+
