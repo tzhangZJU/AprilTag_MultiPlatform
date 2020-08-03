@@ -5,9 +5,11 @@ include_directories(common)
 file(GLOB lib_srcs *.c common/*.c)
 file(GLOB lib_hdrs *.h common/*.h)
 
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c99")
+
 if(CMAKE_COMPILER_IS_GNUCXX AND UNIX)
   set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fPIC")
+else() 
+  set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c99")
 endif()
 
 add_library(${PROJECT_NAME} ${lib_srcs} ${lib_hdrs})
